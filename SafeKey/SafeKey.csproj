@@ -114,5 +114,11 @@
     <Resource Include="Icons\Plus.png" />
     <Resource Include="Icons\Plus_alt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Plus_Alt_Grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\minus_alt_grey.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
