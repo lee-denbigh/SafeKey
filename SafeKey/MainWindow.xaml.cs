@@ -24,5 +24,32 @@ namespace SafeKey
         {
             InitializeComponent();
         }
+
+        private void SafeKeyMainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            int testListItemCount = 10;
+
+            for (int i = 0; i < testListItemCount; i++)
+            {
+                ListBoxItem lbi = new ListBoxItem();
+                DataTemplate dt = GetContentTemplate("CredentialListItemContentTemplate");
+                lbi.Style = GetResourceStyle("CredentialListItem");
+                lbi.ContentTemplate = dt;
+
+                CredentialsList.Items.Add(lbi);
+            }
+        }
+
+        Style GetResourceStyle(string XKey)
+        {
+            return (Style)Application.Current.Resources[XKey];
+        }
+
+        DataTemplate GetContentTemplate(string XKey)
+        {
+            return (DataTemplate)Application.Current.Resources[XKey];
+        }
     }
+
+    
 }

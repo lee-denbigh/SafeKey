@@ -120,5 +120,13 @@
   <ItemGroup>
     <Resource Include="Icons\minus_alt_grey.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\email_16.png" />
+    <Resource Include="Icons\Key_16.png" />
+    <Resource Include="Icons\user_16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
